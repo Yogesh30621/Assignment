@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let arr=["Yogya","Jay","Vighnya","Sankya","Pondya"]
+        let name=prompt("Enter Your Name")
+        if (arr.includes(name)) {
+            console.log(name+" Present")
+            let otp=document.getElementById("demo").innerHTML =Math.ceil(Math.max(Math.random() * 10000));
+            let str=otp.toString();
+            let len=str.length
+            console.log(str)
+            console.log(len)
+            if (len<2) {
+                console.log(str+"000")
+            } else  if(len<3){
+                console.log(str+"00")
+            } else  if(len<4){
+                console.log(str+"0")
+            } else{
+                console.log(str)
+            }
+            
+        } else {
+            console.log(name+" not present")
+        }
+        
+    </script>
+</body>
+</html>
