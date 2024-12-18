@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg_color">
+    <h1>hello welcome to javascript</h1>
+    <button onclick="pink()">pink</button><br><br>
+    <button onclick="sky_blue()">sky blue</button><br><br>
+    <button onclick="white()">white</button><br><br>
+    <button onclick="black()">black</button><br><br>
+    
+
+    <script>
+        function pink(){
+            document.getElementById("bg_color").style.backgroundColor='pink'
+            document.getElementById("bg_color").style.color='green'
+        }
+        function sky_blue(){
+            document.getElementById("bg_color").style.backgroundColor='skyblue'
+            document.getElementById("bg_color").style.color='red'
+        }
+        function white(){
+            document.getElementById("bg_color").style.backgroundColor='white'
+            document.getElementById("bg_color").style.color='black'
+        }
+        function black(){
+            document.getElementById("bg_color").style.backgroundColor='black'
+            document.getElementById("bg_color").style.color='white'
+        }
+    </script>
+</body>
+</html>
