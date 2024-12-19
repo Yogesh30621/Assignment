@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="schedule()">Click For Schedule</button><br><br>
+    <div id="task" style="border: 2x solid black;">
+        <label for="">Your task is complete</label>
+        <button onclick="right()">correct</button>
+        <button onclick="wrong()">wrong</button>
+    </div>
+
+    <script>
+        document.getElementById('task').style.display = "none"
+        function schedule() {
+            document.getElementById('task').style.border = "2x solid black"
+            document.getElementById('task').style.display = "inline-block"
+
+        }
+        function right() {
+            document.getElementById('task').style.backgroundColor='green'
+            alert('Task complete')
+        }
+        function wrong() {
+            document.getElementById('task').style.backgroundColor='red'
+            alert('Task incomplete')
+        }
+    </script>
+</body>
+
+</html>
